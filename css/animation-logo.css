@@ -1,0 +1,26 @@
+#logo_img {
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.2s;
+}
+
+@keyframes slidein {
+    from {
+        top: -60px;
+        width: 150%;
+        opacity: 0.3;
+        transform: rotate(360deg)
+    }
+    30% {
+        top: -40px;
+        width: 125%;
+        transform: rotate(360deg);
+    }
+    to {
+        top: 0px;
+        width: 100%;
+        opacity: 1;
+        transform: rotate(0deg)
+    }
+}

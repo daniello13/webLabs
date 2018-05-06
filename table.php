@@ -1,0 +1,161 @@
+<?php
+	// $js = "js/main.js";
+	$js2 = "js/jqvalidate.js";
+    $title = "index2.html";
+    $style = "css/style2.css";
+	$news_title = "Таблица";
+?>
+
+<?php
+	require_once "header.php"
+?>
+
+<div class="table">
+	<div class="nameTable"><span>Таблица 1.</span></div>
+	<table>
+		<tr>
+			<th>
+				<span>Имя</span>
+			</th>
+			<th>
+				<span>Фамилия</span>
+			</th>
+			<th>
+				<span>Отчество</span>
+			</th>
+			<th>
+				<span>Возраст</span>
+			</th>
+			<th>
+				<span>Пол</span>
+			
+			</th>
+			<th>
+				<span>Долг</span>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<span>Абдул</span>
+			</td>
+			<td>
+				<span>Абдулаев</span>
+			</td>
+			<td>
+				<span>Абдулаевич</span>
+			</td>
+			<td>
+				<span>34</span>
+			</td>
+			<td>
+				<span>Муж</span>
+			</td>
+			<td>
+				<span>123.00</span>
+			</td>	
+		</tr>
+		<tr>
+			<td>
+				<span>Иван</span>
+			</td>
+			<td>
+				<span>Иванов</span>
+			</td>
+			<td>
+				<span>Иванович</span>
+			</td>
+			<td>
+				<span>18</span>
+			</td>
+			<td>
+				<span>Муж</span>
+			</td>
+			<td>
+				<span>2345.00</span>
+			</td>	
+		</tr>
+		<tr>
+			<td>
+				<span>Петрова</span>
+			</td>
+			<td>
+				<span>Полина</span>
+			</td>
+			<td>
+				<span>Петровна</span>
+			</td>
+			<td>
+				<span>45</span>
+			</td>
+			<td>
+				<span>Жен</span>
+			</td>
+			<td>
+				<span>1267.24</span>
+			</td>	
+		</tr>
+		<tr>
+			<td>
+				<span>Абдул</span>
+			</td>
+			<td>
+				<span>Абдулаев</span>
+			</td>
+			<td>
+				<span>Абдулаевич</span>
+			</td>
+			<td>
+				<span>34</span>
+			</td>
+			<td>
+				<span>Муж</span>
+			</td>
+			<td>
+				<span>123.00</span>
+			</td>	
+		</tr>
+		<tr>
+			<td>
+				<span>Абдул</span>
+			</td>
+			<td>
+				<span>Абдулаев</span>
+			</td>
+			<td>
+				<span>Абдулаевич</span>
+			</td>
+			<td>
+				<span>34</span>
+			</td>
+			<td>
+				<span>Муж</span>
+			</td>
+			<td>
+				<span>123.00</span>
+			</td>	
+		</tr>
+		<tr>
+			<td>
+				<span>Абдул</span>
+			</td>
+			<td>
+				<span>Абдулаев</span>
+			</td>
+			<td>
+				<span>Абдулаевич</span>
+			</td>
+			<td>
+				<span>34</span>
+			</td>
+			<td>
+				<span>Муж</span>
+			</td>
+			<td>
+				<span>123.00</span>
+			</td>	
+		</tr>
+	</table>
+</div>
+<?php
+	require_once "footer.php"
+?>

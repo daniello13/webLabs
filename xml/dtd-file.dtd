@@ -1,0 +1,20 @@
+<!ELEMENT medicine (types,product+)>
+<!ELEMENT types (type+)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT product (image, name, typen, maker,valiability,incompletedesc, description, price, param*)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT typen (#PCDATA)>
+<!ELEMENT maker (#PCDATA)>
+<!ELEMENT incompletedesc (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT valiability (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT param (nameofParam, valofParam)>
+<!ELEMENT nameofParam (#PCDATA)>
+<!ELEMENT valofParam (#PCDATA)>
+<!ATTLIST type 
+    id ID #REQUIRED>
+<!ATTLIST product
+    iid IDREF #REQUIRED 
+    sernum ID #REQUIRED>

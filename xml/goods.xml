@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE medicine SYSTEM "dtd-file.dtd">
+<medicine>
+	<types>
+		<type id="antiviral">Противовирусное средство</type>
+		<type id="vitamins">Витамины</type>
+		<type id="painkillers">Обезболювающее средство</type>
+	</types>
+	<product iid="antiviral" sernum="a0001">
+		<image>img/amizon.jpg</image>
+        <name>Амизон</name>
+		<typen>Противовирусное средство</typen>
+        <maker>Фармак, Украина</maker>
+		<valiability>Есть в наличии</valiability>
+		<incompletedesc>Ненаркотический анальгетик, содержащий йод</incompletedesc>
+		<description>Ненаркотический анальгетик, содержащий йод, с противовоспалительными, жаропонижающими, интерфероногенными и иммуномодулирующими свойствами.</description>
+		<price>54 ₴</price>
+		<param>
+			<nameofParam>active-substance</nameofParam>
+			<valofParam>Энисамия йодид</valofParam>
+		</param>
+		<param>
+			<nameofParam>Count</nameofParam>
+			<valofParam>20 таблеток в упаковке, 3 пластинки</valofParam>
+		</param>
+		<param>
+			<nameofParam>Using</nameofParam>
+			<valofParam>Прием по одной таблетке каждые 4 часа</valofParam>
+		</param>
+	</product>
+	<product iid="vitamins" sernum="a0002">
+		<image>img/magnesium.jpg</image>
+        <name>Магнезиум</name>
+		<typen>Витамины</typen>
+        <maker>Magnes, USA</maker>
+		<valiability>Есть в наличии</valiability>
+		<incompletedesc>Относится к нестероидным противовоспалительным препаратам (НПВП)</incompletedesc>
+		<description>Относится к нестероидным противовоспалительным препаратам (НПВП), группе производных пиразолона. По механизму действия похож на другие НПВП (неселективно блокирует ЦОГ и снижает образование простагландинов из арахидоновой кислоты.</description>
+		<price>180 ₴</price>
+		<param>
+			<nameofParam>active-substance</nameofParam>
+			<valofParam>Магния трисиликат</valofParam>
+		</param>
+		<param>
+			<nameofParam>Count</nameofParam>
+			<valofParam>30 таблеток в упаковке, 2 пластинки</valofParam>
+		</param>
+		<param>
+			<nameofParam>Using</nameofParam>
+			<valofParam>Прием по одной таблетке каждые 12 часа</valofParam>
+		</param>
+	</product>
+	<product iid="painkillers" sernum="a0003">
+		<image>img/analgin.jpg</image>
+        <name>Анальгин</name>
+		<typen>Обезболювающее средство</typen>
+        <maker>Готей-Мед, Россия</maker>
+		<valiability>Есть в наличии</valiability>
+		<incompletedesc>При приёме внутрь поддерживает необходимый энергетический уровень всего организма</incompletedesc>
+		<description>При приёме внутрь поддерживает необходимый энергетический уровень всего организма. Рекомендуется при мышечной слабости, нервном истощении, общей утомлённости и синдроме хронической усталости.</description>
+		<price>80 ₴</price>
+		<param>
+			<nameofParam>active-substance</nameofParam>
+			<valofParam>Метамизол натрия</valofParam>
+		</param>
+		<param>
+			<nameofParam>Count</nameofParam>
+			<valofParam>40 таблеток в упаковке, 4 пластинки</valofParam>
+		</param>
+		<param>
+			<nameofParam>Using</nameofParam>
+			<valofParam>Прием не более 3х таблеток в 12 часов</valofParam>
+		</param>
+	</product>
+</medicine>
