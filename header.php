@@ -10,8 +10,7 @@
     <script type="text/javascript">var dom ="/lab7v2/";</script>
     <script src="https://js.cx/libs/animate.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="<?php echo $js; ?>"></script>
-    <script src="<?php echo $js2; ?>"></script>
+   
 
     <?php 
         if(isset($jq))
