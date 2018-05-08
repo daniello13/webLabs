@@ -4,9 +4,10 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="<?php echo $style; ?>">
     <link rel="stylesheet" href="css/animation-logo.css">
-    <link rel="stylesheet" href="css/reset.css">
+    
     <script type="text/javascript">var dom ="/lab7v2/";</script>
     <script src="https://js.cx/libs/animate.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>

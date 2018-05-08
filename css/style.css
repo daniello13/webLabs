@@ -65,7 +65,24 @@
     text-decoration: none;
     color: #000;
 }
-
+.boroda {
+    font: 12pt sans-serif;
+    margin: 5px;
+    border: 4px double black;
+    padding: 20px;
+}
+.tbly{
+    padding: 5px;
+    border: 2px solid black;
+    border-spacing: 8px;
+}
+.text-opis{
+    text-align: left;
+    padding-left: 220px;
+}
+.img-big{
+    margin-right: 20px;
+}
 .menu-left li a span {
     display: block;
     text-align: center;

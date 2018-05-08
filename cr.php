@@ -1,9 +1,9 @@
 <?php
-$link = mysqli_connect('localhost', 'root', '');
+$link = mysqli_connect('localhost', 'root','');
 if (!$link) {
     die('Ошибка соединения: ' . mysqli_error());
 }
-$sql = 'CREATE DATABASE shop';
+$sql = 'CREATE DATABASE shop CHARACTER SET utf8 COLLATE utf8_general_ci';
 mysqli_query($link, $sql);
 
 
@@ -43,9 +43,9 @@ $sql = "CREATE TABLE comment
 )";
 mysqli_query($link, $sql);
 $sql="INSERT INTO types (names) VALUES
-    ('Antivirus'),
-    ('Antiallergic'),
-    ('Different')
+    ('Антивирус'),
+    ('Антиаллергик'),
+    ('Разное')
 ";
 mysqli_query($link, $sql);
 $sql="INSERT INTO tovar (photo,names, proizv, opis, type_id, cost) VALUES
@@ -55,13 +55,14 @@ $sql="INSERT INTO tovar (photo,names, proizv, opis, type_id, cost) VALUES
 ";
 mysqli_query($link, $sql);
 $sql="INSERT INTO comment (names, email, IP, comment, id_tovar) VALUES
-    ('Daniel', 'daniello13@mail.ru', '192.168.11.5', 'Все хуйня', 1),
+    ('Daniel', 'daniello13@mail.ru', '192.168.11.5', 'Замечательно. Рекомендую держать дома', 1),
     ('Maks', 'maximum@outlook.com', '192.465.15.12', 'Замечательное лекарство, всем советую...', 2),
     ('Irina', 'ruwm@outlook.com', '175.45.45.12', 'Раны просто затягиваются', 3),
     ('Derek', 'derekussik@ruv.com', '166.178.45.19', 'Иногда помогает', 1),
     ('Gena', 'gennadiy@kuch.en', '178.122.14.72', 'Что-то в этом есть', 2),
     ('JIeHiH', 'jiehih@mail.ru', '208.45.86.70', 'Восстать из саркофага не поможет', 3)
 ";
+echo mb_detect_encoding('Все хуйня');
 mysqli_query($link, $sql);
 mysqli_close($link);
 ?>
