@@ -1,7 +1,7 @@
 <?php
     $title = "ShopSql.php";
     $style = "css/style.css";
-    $news_title = "Магазин";
+    $news_title = "Отзывы";
 ?>
 <?php
     require_once "header.php";
@@ -91,7 +91,7 @@
                 echo "<br>Комментарии: ";
                 
                 $id_tovar=$row[0];
-                $comments="SELECT * FROM comment WHERE id_tovar=".$id_tovar.";";
+                $comments="SELECT * FROM comment WHERE id_tovar=".$id_tovar." AND `enabled`>0;";
                 $result_com = mysqli_query($link, $comments) or die("Ошибка " . mysqli_error($link));
                 if($result_com){
                     $kolvo_comments = mysqli_num_rows($result_com);
@@ -116,5 +116,7 @@
 
 ?>
 <?php
+session_destroy();
+unset($_SESSION['log']);
 	require_once "header.php"
 ?>

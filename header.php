@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="<?php echo $style; ?>">
     <link rel="stylesheet" href="css/animation-logo.css">
     
-    <script type="text/javascript">var dom ="/lab7v2/";</script>
+    <script type="text/javascript">var dom ="/webLabs/";</script>
     <script src="https://js.cx/libs/animate.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
    
 
     <?php 
+        session_start();
         if(isset($jq))
             echo $jq; 
         else {
             echo"<script src=\"js/modal.js\"></script>";
         }
-    
     ?>
     
     <!--Link to fancy-box-->
@@ -42,11 +42,16 @@
         <!-- bottom: 100px; -->
     </div>
     <div class="pannel clearfix">
-        <form action="#" class="form">
+        <form action="access.php" class="form" method = "post">
             <div class="input-wrap">
                 <div class="login">
                     <span class="log">ЛОГИН</span>
-                    <input type="text" name="login" class="log_in">
+                    <input type="text" name="login" class="log_in" 
+                    <?php 
+                        if(isset($_SESSION['log'])) 
+                            echo "value="."\"".$_SESSION['log']."\""; 
+                    ?>
+                        >
                 </div>
                 <div class="pass">
                     <span class="log">ПАРОЛЬ</span>
@@ -78,10 +83,16 @@
                     </a>
             </li>
             <li>
-                <a href="#">
-                        <img src="img/5.gif" alt="">
-                        <span>заказы</span>
-                    </a>
+                <?php 
+                    if(isset($_SESSION['log'])){
+                        if(($_SESSION['log'])=="daniello13@mail.ru")
+                            echo "<a href = \"AdminPanel.php\"><img src=\"img/5.gif\" alt=\"\"><span>Панель</span>";
+                    }
+                        else
+                             echo "<a href = \"#\"><img src=\"img/5.gif\" alt=\"\"><span>заказы</span>";
+                            
+                
+                ?>
             </li>
             <li>
                 <a href="#">

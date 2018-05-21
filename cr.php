@@ -51,7 +51,8 @@ mysqli_query($link, $sql);
 $sql="INSERT INTO tovar (photo,names, proizv, opis, type_id, cost) VALUES
     ('img/amizon-big.jpg','Amizon', 'LTD Farma', 'Amizon is used for treatment and prevention influenza and RVIs; infectious mononucleosis; measles, rubella, chickenpox, parotitic infection cat scratch disease.',1, 1),
     ('img/cetrin.jpg','Cetrin', 'Ind_Medicals', 'Cetirizine, prominently marketed under the brand name Zyrtec among others, is a potent second-generation antihistamine used in the treatment of hay fever, allergies, angioedema, and urticaria.', 2, 5),
-    ('img/iod.jpg','Iod', 'Azov', 'Iodine is a chemical element with symbol I and atomic number 53. The heaviest of the stable halogens, it exists as a lustrous, purple-black metallic solid.', 3, 1)
+    ('img/iod.jpg','Iod', 'Azov', 'Iodine is a chemical element with symbol I and atomic number 53. The heaviest of the stable halogens, it exists as a lustrous, purple-black metallic solid.', 3, 1),
+    ('img/zelen.jpg', 'Zelen', 'RF', 'Brilliant green is one of the triarylmethane dyes. It is closely related to malachite green', 3, 2)
 ";
 mysqli_query($link, $sql);
 $sql="INSERT INTO comment (names, email, IP, comment, id_tovar) VALUES
@@ -60,7 +61,8 @@ $sql="INSERT INTO comment (names, email, IP, comment, id_tovar) VALUES
     ('Irina', 'ruwm@outlook.com', '175.45.45.12', 'Раны просто затягиваются', 3),
     ('Derek', 'derekussik@ruv.com', '166.178.45.19', 'Иногда помогает', 1),
     ('Gena', 'gennadiy@kuch.en', '178.122.14.72', 'Что-то в этом есть', 2),
-    ('JIeHiH', 'jiehih@mail.ru', '208.45.86.70', 'Восстать из саркофага не поможет', 3)
+    ('JIeHiH', 'jiehih@mail.ru', '208.45.86.70', 'Восстать из саркофага не поможет', 3),
+    ('JIeHiH', 'jiehih@mail.ru', '208.45.86.70', 'Восстать из саркофага не поможет', 4)
 ";
 echo mb_detect_encoding('Все хуйня');
 mysqli_query($link, $sql);

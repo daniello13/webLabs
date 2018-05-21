@@ -6,6 +6,8 @@
 
 <?php
     require_once "header.php"
+   
+    //
 ?>
 
     <form id="image-load" action="GD.php" method="post" enctype="multipart/form-data">
@@ -23,9 +25,11 @@
         <input type="submit" value="Преобразовать">
     </form>
 <?php
+    
     function Resize($src,$width,$height)
     {
         $size = getimagesize($src);
+        
         switch($size["mime"])
         {
             case "image/jpeg":$isrc = imagecreatefromjpeg($src); break;
@@ -83,5 +87,6 @@
     }
 ?>
 <?php
+
 	require_once "header.php";
 ?>
